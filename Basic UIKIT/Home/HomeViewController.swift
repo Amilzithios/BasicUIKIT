@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         }
         tableView.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
         self.title = "Home"
-
+        
     }
     
     func loadDataFromCoreData() {
@@ -63,7 +63,7 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
-    @IBAction func removeAll(_ action: UIButton) {
+    @IBAction func removeAll() {
         // Example: Removing all objects from Core Data
         
         let context = Databasehandler.shared.persistentContainer.viewContext
@@ -99,17 +99,29 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
+    @IBAction func getSpecificObj(_ action: UIButton) {
+        let specificId = Int64(postData.first?.id ?? 3) // Example ID, replace with actual ID you want to fetch
+        if let specificObject = Databasehandler.shared.fetchObject(withId: specificId) {
+            print("Fetched object with id \(specificId):", specificObject)
+            self.postData = [specificObject]
+            // Do something with the fetched object, e.g., display its details
+        } else {
+            print("No object found with id \(specificId)")
+        }
+        tableView.reloadData()
+    }
+    
     @objc func deleteObjc(_ sender: UIButton) {
-//        let postToDelete = postData[sender.tag]
-//        let context = Databasehandler.shared.persistentContainer.viewContext
-//        context.delete(postToDelete)
-//        
-//        do {
-//            try context.save()
-//            self.postData.remove(at: sender.tag)
-//        } catch {
-//            print("Error deleting data from Core Data:", error)
-//        }
+        //        let postToDelete = postData[sender.tag]
+        //        let context = Databasehandler.shared.persistentContainer.viewContext
+        //        context.delete(postToDelete)
+        //        
+        //        do {
+        //            try context.save()
+        //            self.postData.remove(at: sender.tag)
+        //        } catch {
+        //            print("Error deleting data from Core Data:", error)
+        //        }
         
         Databasehandler.shared.deleteObject(withId: postData[sender.tag].id) { success in
             if success {

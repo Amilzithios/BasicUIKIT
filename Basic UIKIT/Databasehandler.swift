@@ -54,5 +54,21 @@ class Databasehandler: NSObject {
             completion(false)
         }
     }
+    
+    func fetchObject(withId id: Int64) -> HomeDataEntity? {
+        let context = persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<HomeDataEntity> = HomeDataEntity.fetchRequest()
+        
+        // Use %d for Int64
+        fetchRequest.predicate = NSPredicate(format: "id == %d", id)
+        
+        do {
+            let objects = try context.fetch(fetchRequest)
+            return objects.first
+        } catch {
+            print("Error fetching object with id \(id):", error)
+            return nil
+        }
+    }
 }
 

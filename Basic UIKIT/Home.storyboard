@@ -27,7 +27,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                         <connections>
-                                            <action selector="addNewObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YiO-Yt-dlv"/>
+                                            <action selector="addNewObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="I2l-d5-Mdz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz9-gJ-W9K">
@@ -38,7 +38,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Remove All"/>
                                         <connections>
-                                            <action selector="removeAll:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="g7b-EK-25n"/>
+                                            <action selector="removeAll" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fGn-Qy-32u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-xo-vYC">
@@ -52,8 +52,19 @@
                                             <action selector="removeSpecifObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ycY-x5-Dh3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am8-fB-DC9">
+                                        <rect key="frame" x="0.0" y="105" width="393" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="sH1-ld-0xL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Get last index data"/>
+                                        <connections>
+                                            <action selector="getSpecificObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CGe-dw-DG7"/>
+                                        </connections>
+                                    </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U90-ok-wb4">
-                                        <rect key="frame" x="0.0" y="105" width="393" height="654"/>
+                                        <rect key="frame" x="0.0" y="140" width="393" height="619"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="dataSource" destination="Y6W-OH-hqX" id="Cmf-mq-uXw"/>
@@ -64,8 +75,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="mz9-gJ-W9K" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="0uH-6p-GqT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Am8-fB-DC9" secondAttribute="trailing" id="2dH-dn-dNV"/>
                                     <constraint firstAttribute="bottom" secondItem="U90-ok-wb4" secondAttribute="bottom" id="4lH-XH-P1j"/>
-                                    <constraint firstItem="U90-ok-wb4" firstAttribute="top" secondItem="4U9-xo-vYC" secondAttribute="bottom" id="7QT-cL-gXG"/>
                                     <constraint firstItem="U90-ok-wb4" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="A6d-ID-76e"/>
                                     <constraint firstItem="4U9-xo-vYC" firstAttribute="top" secondItem="mz9-gJ-W9K" secondAttribute="bottom" id="BYW-S7-Pna"/>
                                     <constraint firstAttribute="trailing" secondItem="U90-ok-wb4" secondAttribute="trailing" id="Btv-Xd-QvH"/>
@@ -73,8 +84,11 @@
                                     <constraint firstItem="f56-mL-0bY" firstAttribute="top" secondItem="Z7w-F2-XP1" secondAttribute="top" id="H9H-Nc-8nA"/>
                                     <constraint firstAttribute="trailing" secondItem="f56-mL-0bY" secondAttribute="trailing" id="Hl6-rC-Pgq"/>
                                     <constraint firstItem="4U9-xo-vYC" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="In3-Fy-uPY"/>
+                                    <constraint firstItem="Am8-fB-DC9" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="K3V-Re-ujE"/>
+                                    <constraint firstItem="Am8-fB-DC9" firstAttribute="top" secondItem="4U9-xo-vYC" secondAttribute="bottom" id="R70-Hn-af1"/>
                                     <constraint firstAttribute="trailing" secondItem="mz9-gJ-W9K" secondAttribute="trailing" id="Rkn-tT-sU2"/>
                                     <constraint firstItem="mz9-gJ-W9K" firstAttribute="top" secondItem="f56-mL-0bY" secondAttribute="bottom" id="Uet-ff-6UX"/>
+                                    <constraint firstItem="U90-ok-wb4" firstAttribute="top" secondItem="Am8-fB-DC9" secondAttribute="bottom" id="lor-HR-FEb"/>
                                     <constraint firstItem="f56-mL-0bY" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="xFl-uY-3fh"/>
                                 </constraints>
                             </view>
