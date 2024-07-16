@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5946AB442C47011F009ECA87 /* HomeDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946AB422C47011F009ECA87 /* HomeDataEntity+CoreDataClass.swift */; };
+		5946AB452C47011F009ECA87 /* HomeDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946AB432C47011F009ECA87 /* HomeDataEntity+CoreDataProperties.swift */; };
 		59FB74E02C46EA4900AE9E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB74DF2C46EA4900AE9E3F /* AppDelegate.swift */; };
 		59FB74E22C46EA4900AE9E3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB74E12C46EA4900AE9E3F /* SceneDelegate.swift */; };
-		59FB74E42C46EA4900AE9E3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB74E32C46EA4900AE9E3F /* ViewController.swift */; };
+		59FB74E42C46EA4900AE9E3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB74E32C46EA4900AE9E3F /* HomeViewController.swift */; };
 		59FB74E72C46EA4900AE9E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FB74E52C46EA4900AE9E3F /* Main.storyboard */; };
 		59FB74E92C46EA4A00AE9E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FB74E82C46EA4A00AE9E3F /* Assets.xcassets */; };
 		59FB74EC2C46EA4A00AE9E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FB74EA2C46EA4A00AE9E3F /* LaunchScreen.storyboard */; };
 		59FB74F72C46EA4A00AE9E3F /* Basic_UIKITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB74F62C46EA4A00AE9E3F /* Basic_UIKITTests.swift */; };
 		59FB75012C46EA4A00AE9E3F /* Basic_UIKITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75002C46EA4A00AE9E3F /* Basic_UIKITUITests.swift */; };
 		59FB75032C46EA4A00AE9E3F /* Basic_UIKITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75022C46EA4A00AE9E3F /* Basic_UIKITUITestsLaunchTests.swift */; };
+		59FB75112C46EC6600AE9E3F /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75102C46EC6600AE9E3F /* TabbarController.swift */; };
+		59FB75152C46EEB500AE9E3F /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75142C46EEB500AE9E3F /* BookmarkViewController.swift */; };
+		59FB75172C46EEC100AE9E3F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75162C46EEC100AE9E3F /* AccountViewController.swift */; };
+		59FB75192C46EF2700AE9E3F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FB75182C46EF2700AE9E3F /* Home.storyboard */; };
+		59FB751B2C46EF3A00AE9E3F /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FB751A2C46EF3A00AE9E3F /* Bookmark.storyboard */; };
+		59FB751D2C46EF4700AE9E3F /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FB751C2C46EF4700AE9E3F /* Account.storyboard */; };
+		59FB751F2C46F38800AE9E3F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB751E2C46F38800AE9E3F /* HomeViewModel.swift */; };
+		59FB75212C46F3BF00AE9E3F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75202C46F3BF00AE9E3F /* HomeModel.swift */; };
+		59FB75242C46F40700AE9E3F /* HomeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75222C46F40700AE9E3F /* HomeData.xcdatamodeld */; };
+		59FB752F2C46F56900AE9E3F /* Databasehandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB752E2C46F56900AE9E3F /* Databasehandler.swift */; };
+		59FB75332C46F61400AE9E3F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB75312C46F61400AE9E3F /* HomeCell.swift */; };
+		59FB75342C46F61400AE9E3F /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FB75322C46F61400AE9E3F /* HomeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5946AB412C46FFD9009ECA87 /* HomeData 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "HomeData 3.xcdatamodel"; sourceTree = "<group>"; };
+		5946AB422C47011F009ECA87 /* HomeDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDataEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5946AB432C47011F009ECA87 /* HomeDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		59FB74DC2C46EA4900AE9E3F /* Basic UIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic UIKIT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FB74DF2C46EA4900AE9E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59FB74E12C46EA4900AE9E3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59FB74E32C46EA4900AE9E3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59FB74E32C46EA4900AE9E3F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		59FB74E62C46EA4900AE9E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59FB74E82C46EA4A00AE9E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59FB74EB2C46EA4A00AE9E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,19 @@
 		59FB74FC2C46EA4A00AE9E3F /* Basic UIKITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basic UIKITUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FB75002C46EA4A00AE9E3F /* Basic_UIKITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_UIKITUITests.swift; sourceTree = "<group>"; };
 		59FB75022C46EA4A00AE9E3F /* Basic_UIKITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_UIKITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59FB75102C46EC6600AE9E3F /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		59FB75142C46EEB500AE9E3F /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		59FB75162C46EEC100AE9E3F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		59FB75182C46EF2700AE9E3F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		59FB751A2C46EF3A00AE9E3F /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
+		59FB751C2C46EF4700AE9E3F /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		59FB751E2C46F38800AE9E3F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		59FB75202C46F3BF00AE9E3F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		59FB75232C46F40700AE9E3F /* HomeData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeData.xcdatamodel; sourceTree = "<group>"; };
+		59FB75292C46F48100AE9E3F /* HomeData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "HomeData 2.xcdatamodel"; sourceTree = "<group>"; };
+		59FB752E2C46F56900AE9E3F /* Databasehandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Databasehandler.swift; sourceTree = "<group>"; };
+		59FB75312C46F61400AE9E3F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		59FB75322C46F61400AE9E3F /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +109,8 @@
 		59FB74D32C46EA4900AE9E3F = {
 			isa = PBXGroup;
 			children = (
+				5946AB422C47011F009ECA87 /* HomeDataEntity+CoreDataClass.swift */,
+				5946AB432C47011F009ECA87 /* HomeDataEntity+CoreDataProperties.swift */,
 				59FB74DE2C46EA4900AE9E3F /* Basic UIKIT */,
 				59FB74F52C46EA4A00AE9E3F /* Basic UIKITTests */,
 				59FB74FF2C46EA4A00AE9E3F /* Basic UIKITUITests */,
@@ -99,13 +131,21 @@
 		59FB74DE2C46EA4900AE9E3F /* Basic UIKIT */ = {
 			isa = PBXGroup;
 			children = (
-				59FB74E32C46EA4900AE9E3F /* ViewController.swift */,
+				59FB75102C46EC6600AE9E3F /* TabbarController.swift */,
+				59FB75302C46F5E200AE9E3F /* Home */,
+				59FB75142C46EEB500AE9E3F /* BookmarkViewController.swift */,
+				59FB75162C46EEC100AE9E3F /* AccountViewController.swift */,
+				59FB752E2C46F56900AE9E3F /* Databasehandler.swift */,
 				59FB74E52C46EA4900AE9E3F /* Main.storyboard */,
+				59FB75182C46EF2700AE9E3F /* Home.storyboard */,
+				59FB751A2C46EF3A00AE9E3F /* Bookmark.storyboard */,
+				59FB751C2C46EF4700AE9E3F /* Account.storyboard */,
 				59FB74E82C46EA4A00AE9E3F /* Assets.xcassets */,
 				59FB74EA2C46EA4A00AE9E3F /* LaunchScreen.storyboard */,
 				59FB74ED2C46EA4A00AE9E3F /* Info.plist */,
 				59FB74E12C46EA4900AE9E3F /* SceneDelegate.swift */,
 				59FB74DF2C46EA4900AE9E3F /* AppDelegate.swift */,
+				59FB75222C46F40700AE9E3F /* HomeData.xcdatamodeld */,
 			);
 			path = "Basic UIKIT";
 			sourceTree = "<group>";
@@ -125,6 +165,18 @@
 				59FB75022C46EA4A00AE9E3F /* Basic_UIKITUITestsLaunchTests.swift */,
 			);
 			path = "Basic UIKITUITests";
+			sourceTree = "<group>";
+		};
+		59FB75302C46F5E200AE9E3F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59FB74E32C46EA4900AE9E3F /* HomeViewController.swift */,
+				59FB751E2C46F38800AE9E3F /* HomeViewModel.swift */,
+				59FB75202C46F3BF00AE9E3F /* HomeModel.swift */,
+				59FB75312C46F61400AE9E3F /* HomeCell.swift */,
+				59FB75322C46F61400AE9E3F /* HomeCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +283,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FB75342C46F61400AE9E3F /* HomeCell.xib in Resources */,
 				59FB74EC2C46EA4A00AE9E3F /* LaunchScreen.storyboard in Resources */,
+				59FB751B2C46EF3A00AE9E3F /* Bookmark.storyboard in Resources */,
 				59FB74E92C46EA4A00AE9E3F /* Assets.xcassets in Resources */,
 				59FB74E72C46EA4900AE9E3F /* Main.storyboard in Resources */,
+				59FB75192C46EF2700AE9E3F /* Home.storyboard in Resources */,
+				59FB751D2C46EF4700AE9E3F /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +314,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FB74E42C46EA4900AE9E3F /* ViewController.swift in Sources */,
+				59FB74E42C46EA4900AE9E3F /* HomeViewController.swift in Sources */,
+				59FB75112C46EC6600AE9E3F /* TabbarController.swift in Sources */,
+				59FB751F2C46F38800AE9E3F /* HomeViewModel.swift in Sources */,
+				59FB75172C46EEC100AE9E3F /* AccountViewController.swift in Sources */,
 				59FB74E02C46EA4900AE9E3F /* AppDelegate.swift in Sources */,
+				5946AB452C47011F009ECA87 /* HomeDataEntity+CoreDataProperties.swift in Sources */,
+				5946AB442C47011F009ECA87 /* HomeDataEntity+CoreDataClass.swift in Sources */,
+				59FB75332C46F61400AE9E3F /* HomeCell.swift in Sources */,
+				59FB752F2C46F56900AE9E3F /* Databasehandler.swift in Sources */,
+				59FB75152C46EEB500AE9E3F /* BookmarkViewController.swift in Sources */,
+				59FB75212C46F3BF00AE9E3F /* HomeModel.swift in Sources */,
 				59FB74E22C46EA4900AE9E3F /* SceneDelegate.swift in Sources */,
+				59FB75242C46F40700AE9E3F /* HomeData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +667,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59FB75222C46F40700AE9E3F /* HomeData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5946AB412C46FFD9009ECA87 /* HomeData 3.xcdatamodel */,
+				59FB75292C46F48100AE9E3F /* HomeData 2.xcdatamodel */,
+				59FB75232C46F40700AE9E3F /* HomeData.xcdatamodel */,
+			);
+			currentVersion = 5946AB412C46FFD9009ECA87 /* HomeData 3.xcdatamodel */;
+			path = HomeData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 59FB74D42C46EA4900AE9E3F /* Project object */;
 }

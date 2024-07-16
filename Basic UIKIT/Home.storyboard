@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Basic_UIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7w-F2-XP1">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f56-mL-0bY">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="rvp-g7-gpg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                        <connections>
+                                            <action selector="addNewObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YiO-Yt-dlv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz9-gJ-W9K">
+                                        <rect key="frame" x="0.0" y="35" width="393" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="CFX-Ib-YVx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Remove All"/>
+                                        <connections>
+                                            <action selector="removeAll:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="g7b-EK-25n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-xo-vYC">
+                                        <rect key="frame" x="0.0" y="70" width="393" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="3aV-4d-DNn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Spceific One Remove"/>
+                                        <connections>
+                                            <action selector="removeSpecifObj:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ycY-x5-Dh3"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U90-ok-wb4">
+                                        <rect key="frame" x="0.0" y="105" width="393" height="654"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="Cmf-mq-uXw"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="XcD-Lr-PZX"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mz9-gJ-W9K" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="0uH-6p-GqT"/>
+                                    <constraint firstAttribute="bottom" secondItem="U90-ok-wb4" secondAttribute="bottom" id="4lH-XH-P1j"/>
+                                    <constraint firstItem="U90-ok-wb4" firstAttribute="top" secondItem="4U9-xo-vYC" secondAttribute="bottom" id="7QT-cL-gXG"/>
+                                    <constraint firstItem="U90-ok-wb4" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="A6d-ID-76e"/>
+                                    <constraint firstItem="4U9-xo-vYC" firstAttribute="top" secondItem="mz9-gJ-W9K" secondAttribute="bottom" id="BYW-S7-Pna"/>
+                                    <constraint firstAttribute="trailing" secondItem="U90-ok-wb4" secondAttribute="trailing" id="Btv-Xd-QvH"/>
+                                    <constraint firstAttribute="trailing" secondItem="4U9-xo-vYC" secondAttribute="trailing" id="Dh5-Lv-KT3"/>
+                                    <constraint firstItem="f56-mL-0bY" firstAttribute="top" secondItem="Z7w-F2-XP1" secondAttribute="top" id="H9H-Nc-8nA"/>
+                                    <constraint firstAttribute="trailing" secondItem="f56-mL-0bY" secondAttribute="trailing" id="Hl6-rC-Pgq"/>
+                                    <constraint firstItem="4U9-xo-vYC" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="In3-Fy-uPY"/>
+                                    <constraint firstAttribute="trailing" secondItem="mz9-gJ-W9K" secondAttribute="trailing" id="Rkn-tT-sU2"/>
+                                    <constraint firstItem="mz9-gJ-W9K" firstAttribute="top" secondItem="f56-mL-0bY" secondAttribute="bottom" id="Uet-ff-6UX"/>
+                                    <constraint firstItem="f56-mL-0bY" firstAttribute="leading" secondItem="Z7w-F2-XP1" secondAttribute="leading" id="xFl-uY-3fh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z7w-F2-XP1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3l2-Mc-ZT8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Z7w-F2-XP1" secondAttribute="bottom" id="G4o-fb-alW"/>
+                            <constraint firstItem="Z7w-F2-XP1" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="jt0-Oo-6Fo"/>
+                            <constraint firstAttribute="trailing" secondItem="Z7w-F2-XP1" secondAttribute="trailing" id="xwo-rS-Qls"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="U90-ok-wb4" id="VPQ-qx-zRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
